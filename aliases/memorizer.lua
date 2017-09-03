@@ -25,3 +25,6 @@ for i,temp in ipairs(split(matches[2], ',')) do
 	  table.insert(memorizer, spell)
 	end
 end
+
+-- Start studying the first spell.
+send('mem \'' .. memorizer[#memorizer] .. '\'')
